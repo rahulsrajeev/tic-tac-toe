@@ -1,0 +1,83 @@
+body {
+    background-color: #121212;
+    color: #E6E6E6;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+section {
+text-align: center;
+}
+
+.cell {
+font-family: "Orbitron", sans-serif;
+width: 100px;
+height: 100px;
+box-shadow: 2px 2px 2px 2px #1F51FF;
+border: 2px solid #1F51FF;
+cursor: pointer;
+line-height: 100px;
+font-size: 60px;
+}
+
+.game--title {
+font-size: 100px;
+color: #1F51FF;
+margin: 10px auto;
+font-family: "Orbitron", sans-serif;
+}
+
+.game--container {
+display: grid;
+grid-template-columns: repeat(3, auto);
+width: 306px;
+margin: 10px auto;
+background-color: #121212;
+color: #E6E6E6;
+}
+
+.game--status {
+font-size: 50px;
+color: #1F51FF;
+margin: 20px auto;
+font-family: "Montserrat", sans-serif;
+font-weight: 500;
+}
+
+.game--restart {
+background-color: #1F51FF;
+width: 200px;
+height: 50px;
+font-size: 25px;
+color: #121212;
+box-shadow: 2px 2px 2px 2px #1F51FF;
+border: 2px solid #1F51FF;
+font-family: "Montserrat", sans-serif;
+font-weight: 500;
+cursor: pointer;
+}
+
+.game--home {
+background-color: #1F51FF;
+width: 100px;
+height: 25px;
+font-size: 15px;
+color: #121212;
+box-shadow: 2px 2px 2px 2px #1F51FF;
+border: 2px solid #1F51FF;
+font-family: "Montserrat", sans-serif;
+font-weight: 500;
+cursor: pointer;
+}
+
+.game--restart:hover {
+background-color: #00cc66;
+border-color: #00cc66;
+box-shadow: 2px 2px 2px 2px #00cc66;
+}
+
+.game--home:hover {
+background-color: #00cc66;
+border-color: #00cc66;
+box-shadow: 2px 2px 2px 2px #00cc66;
+}

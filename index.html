@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe - Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #121212;
+        color: #E6E6E6;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      section {
+        text-align: center;
+      }
+
+      .homepage--title {
+        font-size: 100px;
+        color: #FFFF00;
+        margin: 10px auto;
+        font-family: "Orbitron", sans-serif;
+      }
+
+      .homepage--container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 20px;
+        width: 600px;
+        margin: 50px auto;
+      }
+
+      .homepage--option {
+        width: 300px;
+        height: 150px;
+        background-color: #00ff7f;
+        box-shadow: 2px 2px 2px 2px #00ff7f;
+        border: 2px solid #00ff7f;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-family: "Orbitron", sans-serif;
+        transition: all 0.3s ease;
+      }
+
+      .homepage--option:hover {
+        background-color: #1F51FF;
+        border-color: #1F51FF;
+        box-shadow: 2px 2px 2px 2px #1F51FF;
+      }
+      .homepage--option--mult {
+        width: 300px;
+        height: 150px;
+        background-color: #1F51FF;
+        box-shadow: 2px 2px 2px 2px #1F51FF;
+        border: 2px solid #1F51FF;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-family: "Orbitron", sans-serif;
+        transition: all 0.3s ease;
+      }
+
+      .homepage--option--mult:hover {
+        background-color: #00cc66;
+        border-color: #00cc66;
+        box-shadow: 2px 2px 2px 2px #00cc66;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1 class="homepage--title">Tic-Tac-Toe</h1>
+      <div class="homepage--container">
+        <div class="homepage--option" id="single-player">
+          Single Player
+        </div>
+        <div class="homepage--option--mult" id="multiplayer">
+          Multiplayer
+        </div>
+      </div>
+    </section>
+    <script>
+      const singlePlayerBtn = document.getElementById('single-player');
+      const multiplayerBtn = document.getElementById('multiplayer');
+
+      singlePlayerBtn.addEventListener('click', () => {
+        window.location.href = 'single.html';
+      });
+
+      multiplayerBtn.addEventListener('click', () => {
+        window.location.href = 'multi.html';
+      });
+    </script>
+  </body>
+</html>
